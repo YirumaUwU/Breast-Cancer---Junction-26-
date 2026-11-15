@@ -1,0 +1,84 @@
+{
+  "format": "kaari.record/v1",
+  "synthetic": true,
+  "patient": {
+    "id": "SYN-0005",
+    "givenName": "Kersti",
+    "familyName": "Rebane",
+    "birthYear": 1960,
+    "motherTongue": "et",
+    "municipality": "Helsinki",
+    "mobile": true
+  },
+  "screening": {
+    "invitations": [
+      {
+        "year": 2010,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2012,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2014,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2016,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2018,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2020,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2022,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2024,
+        "attended": true,
+        "result": "recalled-no-cancer"
+      }
+    ]
+  },
+  "medications": [
+    {
+      "atc": "G03CA03",
+      "name": "Estradiol",
+      "route": "transdermal",
+      "firstPurchase": "2018-05",
+      "lastPurchase": "2026-09",
+      "purchases": 33
+    },
+    {
+      "atc": "G03CA03",
+      "name": "Estradiol",
+      "route": "vaginal",
+      "firstPurchase": "2023-02",
+      "lastPurchase": "2026-06",
+      "purchases": 9
+    }
+  ],
+  "conditions": [],
+  "familyHistory": {
+    "breastCancerFirstDegree": 0
+  },
+  "appointment": {
+    "date": "2026-11-28",
+    "time": "10:00",
+    "site": "Malmi unit"
+  }
+}

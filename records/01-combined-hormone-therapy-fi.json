@@ -1,0 +1,80 @@
+{
+  "format": "kaari.record/v1",
+  "synthetic": true,
+  "patient": {
+    "id": "SYN-0001",
+    "givenName": "Maija",
+    "familyName": "Lahtinen",
+    "birthYear": 1964,
+    "motherTongue": "fi",
+    "municipality": "Helsinki",
+    "mobile": true
+  },
+  "screening": {
+    "invitations": [
+      {
+        "year": 2014,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2016,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2018,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2020,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2022,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2024,
+        "attended": true,
+        "result": "normal"
+      }
+    ]
+  },
+  "medications": [
+    {
+      "atc": "G03FA01",
+      "name": "Estradiol + norethisterone",
+      "route": "oral",
+      "firstPurchase": "2020-04",
+      "lastPurchase": "2026-10",
+      "purchases": 39
+    },
+    {
+      "atc": "C09AA05",
+      "name": "Ramipril",
+      "route": "oral",
+      "firstPurchase": "2019-02",
+      "lastPurchase": "2026-09",
+      "purchases": 30
+    }
+  ],
+  "conditions": [
+    {
+      "icd10": "I10",
+      "name": "Essential hypertension",
+      "since": 2019
+    }
+  ],
+  "familyHistory": {
+    "breastCancerFirstDegree": 0
+  },
+  "appointment": {
+    "date": "2026-11-24",
+    "time": "17:30",
+    "site": "Kamppi unit"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "format": "kaari.record/v1",
+  "synthetic": true,
+  "patient": {
+    "id": "SYN-0006",
+    "givenName": "Hodan",
+    "familyName": "Warsame",
+    "birthYear": 1968,
+    "motherTongue": "so",
+    "municipality": "Helsinki",
+    "mobile": true
+  },
+  "screening": {
+    "invitations": [
+      {
+        "year": 2018,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2020,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2022,
+        "attended": false
+      },
+      {
+        "year": 2024,
+        "attended": false
+      }
+    ]
+  },
+  "medications": [
+    {
+      "atc": "C08CA01",
+      "name": "Amlodipine",
+      "route": "oral",
+      "firstPurchase": "2020-11",
+      "lastPurchase": "2026-10",
+      "purchases": 24
+    }
+  ],
+  "conditions": [
+    {
+      "icd10": "I10",
+      "name": "Essential hypertension",
+      "since": 2020
+    }
+  ],
+  "familyHistory": {
+    "breastCancerFirstDegree": 0
+  },
+  "appointment": {
+    "date": "2026-11-30",
+    "time": "17:30",
+    "site": "Itäkeskus unit"
+  }
+}

@@ -73,7 +73,7 @@ const R: Record<Lang, { first: string; regular: string }> = {
  * hormone therapy sentence needs clinical sign-off before real use.
  */
 type Part = 'hi' | 'first' | 'regular' | 'missed' | 'never' | 'hrt' | 'slot' | 'symptom';
-const S: Record<Lang, Record<Part, string>> = {
+export const S: Record<Lang, Record<Part, string>> = {
   English: {
     hi: 'Hi {name},',
     first: 'This is your first invitation to breast screening. It is free and takes about 15 minutes.',

@@ -1,0 +1,76 @@
+{
+  "format": "kaari.record/v1",
+  "synthetic": true,
+  "patient": {
+    "id": "SYN-0004",
+    "givenName": "Ingrid",
+    "familyName": "Holmberg",
+    "birthYear": 1962,
+    "motherTongue": "sv",
+    "municipality": "Helsinki",
+    "mobile": true
+  },
+  "screening": {
+    "invitations": [
+      {
+        "year": 2012,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2014,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2016,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2018,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2020,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2022,
+        "attended": true,
+        "result": "normal"
+      },
+      {
+        "year": 2024,
+        "attended": false
+      }
+    ]
+  },
+  "medications": [
+    {
+      "atc": "N06AB10",
+      "name": "Escitalopram",
+      "route": "oral",
+      "firstPurchase": "2022-09",
+      "lastPurchase": "2026-10",
+      "purchases": 16
+    }
+  ],
+  "conditions": [
+    {
+      "icd10": "F32",
+      "name": "Depressive episode",
+      "since": 2022
+    }
+  ],
+  "familyHistory": {
+    "breastCancerFirstDegree": 1
+  },
+  "appointment": {
+    "date": "2026-11-27",
+    "time": "09:20",
+    "site": "Kamppi unit"
+  }
+}

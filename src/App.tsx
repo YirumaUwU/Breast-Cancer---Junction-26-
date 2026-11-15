@@ -2,24 +2,26 @@ import { useEffect, useReducer, useState } from 'react';
 import { fmtDay, TODAY } from './data';
 import { initial, reducer } from './store';
 import { Avatar, Icon } from './ui';
+import { Intake } from './intake/Intake';
 import { Calendar, Drawer, FollowUps, Messages, Patients, Today, type Filter } from './views';
 
-type View = 'today' | 'patients' | 'calendar' | 'follow' | 'messages';
+type View = 'today' | 'patients' | 'calendar' | 'follow' | 'messages' | 'intake';
 const NAV: [View, string, string][] = [
   ['today', 'Today', 'home'],
   ['patients', 'Patients', 'users'],
   ['calendar', 'Calendar', 'calendar'],
   ['follow', 'Follow-ups', 'path'],
   ['messages', 'Messages', 'chat'],
+  ['intake', 'New profile', 'upload'],
 ];
-// Deep link for demos: #patients or #patients:p4 (opens that patient).
+// Deep links for demos: #patients, #patients:p4 (opens that patient), #intake:01 (loads that sample record).
 const [hashView, hashOpen] = location.hash.slice(1).split(':');
 const startView = (): View => (NAV.find(([v]) => v === hashView)?.[0] ?? 'today');
 
 export default function App() {
   const [s, dispatch] = useReducer(reducer, undefined, initial);
   const [view, setView] = useState<View>(startView);
-  const [openId, setOpenId] = useState<string | null>(hashOpen || null);
+  const [openId, setOpenId] = useState<string | null>((hashView === 'patients' && hashOpen) || null);
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<Filter>('all');
   const d = fmtDay(TODAY);
@@ -87,6 +89,9 @@ export default function App() {
         {view === 'calendar' && <Calendar {...props} />}
         {view === 'follow' && <FollowUps {...props} />}
         {view === 'messages' && <Messages {...props} />}
+        <div hidden={view !== 'intake'}>
+          <Intake toast={(text) => dispatch({ type: 'toast', text })} auto={hashView === 'intake' ? hashOpen : undefined} />
+        </div>
       </main>
 
       {openId && <Drawer s={s} dispatch={dispatch} patientId={openId} close={() => setOpenId(null)} />}

@@ -1,0 +1,41 @@
+{
+  "format": "kaari.record/v1",
+  "synthetic": true,
+  "patient": {
+    "id": "SYN-0003",
+    "givenName": "Samira",
+    "familyName": "Al-Najjar",
+    "birthYear": 1976,
+    "motherTongue": "ar",
+    "municipality": "Espoo",
+    "mobile": true
+  },
+  "screening": {
+    "invitations": []
+  },
+  "medications": [
+    {
+      "atc": "H03AA01",
+      "name": "Levothyroxine",
+      "route": "oral",
+      "firstPurchase": "2015-03",
+      "lastPurchase": "2026-08",
+      "purchases": 46
+    }
+  ],
+  "conditions": [
+    {
+      "icd10": "E03",
+      "name": "Hypothyroidism",
+      "since": 2015
+    }
+  ],
+  "familyHistory": {
+    "breastCancerFirstDegree": 0
+  },
+  "appointment": {
+    "date": "2026-11-26",
+    "time": "13:30",
+    "site": "Kamppi unit"
+  }
+}

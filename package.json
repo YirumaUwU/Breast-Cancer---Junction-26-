@@ -6,10 +6,17 @@
   "description": "Kaari: screening outreach and follow-up console (UI prototype on demo data)",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "build": "tsc --noEmit && npm run build:api && vite build",
+    "preview": "vite preview",
+    "pipeline": "vite build --ssr scripts/pipeline.ts --outDir .pipeline --logLevel error && node .pipeline/pipeline.js",
+    "build:api": "vite build --ssr server/vercel.ts --outDir .api --logLevel error && cp .api/vercel.js api/draft.js"
   },
-  "dependencies": { "react": "^19.0.0", "react-dom": "^19.0.0" },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@types/node": "^26.6.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
